@@ -1,0 +1,7 @@
+-> Will be implementing 2 different screen for each subject
+-> in first screen there will be all raw code for testing purposes
+-> in second screen i'll be try to reduce the overall code and improve the approach by placing things as they should be
+
+-> 3rd screen will be calculating overall marks and will show their result.(will be using companion obj(terminology for static keyword)).
+-> 1st screen will be of default dialog boxes and 2nd screen will be of customized dialog boxes.
+-> default dialog boxes cannot cover a whole long ques and options at the same time, so always use alert dialog boxes for short message.

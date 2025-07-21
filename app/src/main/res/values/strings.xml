@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment- Exam App</string>
+    <string name="dbms_ques1">Which of the following describes the lowest level of data abstraction, detailing how data is actually stored?</string>
+    <string name="dbms_ques2">Which of the following SQL statements is used to add new records to a table?</string>
+    <string name="dbms_ques3">What is the primary key in a relational database used for?</string>
+    <string name="dbms_ques4">Which of the following are advantages of using a Database Management System (DBMS)? (Select all that apply)</string>
+    <string name="dbms_ques5">Which of the following are properties of a database transaction? (Select all that apply)</string>
+    <string name="python_ques1">What is a Python list?</string>
+    <string name="python_ques2">Which keyword defines a function?</string>
+    <string name="python_ques3">How to make a comment?</string>
+    <string name="python_ques4">Which types are mutable?</string>
+    <string name="python_ques5">Which are built-in Python functions?</string>
+
+</resources>
