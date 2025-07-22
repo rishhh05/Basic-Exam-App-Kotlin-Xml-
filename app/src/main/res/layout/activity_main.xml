@@ -25,7 +25,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="40dp"
                 android:textSize="25dp"
-                android:text="End Semester Examination\n\t\t\t\t\t Jan-June 2025\n\t\t\t\t\t Subject: DBMS" />
+                android:text="End Semester Examination\n\t\t\t\t\t Jan-June 2025\n\t\t\t\t\t Subject: Python" />
 
             <TextView
                 android:id="@+id/textView"
@@ -98,12 +98,21 @@
                 android:textSize="20dp"/>
 
             <Button
+                android:id="@+id/nextSecBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:text="Next Section" />
+
+            <Button
                 android:id="@+id/submitAttempt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:backgroundTint="@color/black"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:text="Submit Attempt" />
 
 

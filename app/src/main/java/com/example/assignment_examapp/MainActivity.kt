@@ -129,7 +129,7 @@ class MainActivity : AppCompatActivity() {
             var selectedOption: Int = -1
 
             val dialogBuilder1 = AlertDialog.Builder(this)
-            dialogBuilder1.setTitle("Ques 3 :${getString(R.string.python_ques2)}")
+            dialogBuilder1.setTitle("Ques 3 :${getString(R.string.python_ques3)}")
             dialogBuilder1.setSingleChoiceItems(options, -1, DialogInterface.OnClickListener { dialogInterface, optionno ->
                     //what to do when a option is selected
                     selectedOption = optionno
@@ -170,7 +170,7 @@ class MainActivity : AppCompatActivity() {
             val selectedOptions = BooleanArray(options.size) // Tracks user selection
 
             val dialogBuilder1 = AlertDialog.Builder(this)
-            dialogBuilder1.setTitle("Ques 4 :${getString(R.string.python_ques2)}")
+            dialogBuilder1.setTitle("Ques 4 :${getString(R.string.python_ques4)}")
             dialogBuilder1.setMultiChoiceItems(options, null, DialogInterface.OnMultiChoiceClickListener { dialogInterface, optionno, ischecked ->
                 //what to do when a option is selected
                 selectedOptions[optionno] = ischecked
@@ -209,10 +209,10 @@ class MainActivity : AppCompatActivity() {
             val selectedOptions = BooleanArray(options.size) // Tracks user selection
 
             val dialogBuilder1 = AlertDialog.Builder(this)
-            dialogBuilder1.setTitle("Ques 4 :${getString(R.string.python_ques2)}")
+            dialogBuilder1.setTitle("Ques 5 :${getString(R.string.python_ques5)}")
             dialogBuilder1.setMultiChoiceItems(options, null, DialogInterface.OnMultiChoiceClickListener { dialogInterface, optionno, ischecked ->
                 //what to do when a option is selected
-                selectedOptions[optionno] = ischecked
+                selectedOptions[optionno] = ischecked // ischecked is a boolean value
             })
             dialogBuilder1.setPositiveButton("Submit", DialogInterface.OnClickListener { dialogInterface, i ->
                 // what will happen when positive button is clicked
@@ -232,6 +232,11 @@ class MainActivity : AppCompatActivity() {
 
             })
             dialogBuilder1.show()
+        }
+        binding.nextSecBtn.setOnClickListener{
+            var intent = Intent(this@MainActivity , DbmsActivity::class.java)
+            startActivity(intent)
+            finish()
         }
         binding.submitAttempt.setOnClickListener{
             var intent = Intent(this@MainActivity,ResultActivity::class.java)

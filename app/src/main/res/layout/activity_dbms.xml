@@ -1,10 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DbmsActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"
+                android:textSize="25dp"
+                android:text="End Semester Examination\n\t\t\t\t\t Jan-June 2025\n\t\t\t\t\t Subject: DBMS" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:text="NOTE: A question could be answered once only." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/quesbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableEnd="@drawable/outline_arrow_forward_ios_24"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="Ques 1"
+                android:textSize="20dp"
+                android:background = "@drawable/quesbtnlayout" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/quesbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/quesbtnlayout"
+                android:drawableEnd="@drawable/outline_arrow_forward_ios_24"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="Ques 2"
+                android:textSize="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/quesbtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/quesbtnlayout"
+                android:drawableEnd="@drawable/outline_arrow_forward_ios_24"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="Ques 3"
+                android:textSize="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/quesbtn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/quesbtnlayout"
+                android:drawableEnd="@drawable/outline_arrow_forward_ios_24"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="Ques 4"
+                android:textSize="20dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/quesbtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/quesbtnlayout"
+                android:drawableEnd="@drawable/outline_arrow_forward_ios_24"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:text="Ques 5"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/prevSecBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:text="Prev. Section" />
+            <Button
+                android:id="@+id/submitAttempt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="30dp"
+                android:text="Submit Attempt" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
