@@ -1,6 +1,7 @@
 package com.example.assignment_examapp
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -13,7 +14,6 @@ import com.example.assignment_examapp.MainActivity.Companion.marksCounter
 import com.example.assignment_examapp.databinding.ActivityDbmsBinding
 
 class DbmsActivity : AppCompatActivity() {
-
     lateinit var binding: ActivityDbmsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,6 +53,15 @@ class DbmsActivity : AppCompatActivity() {
         }
         binding.quesbtn5.setOnClickListener{
             showQuesDialog(ques5)
+        }
+        binding.prevSecBtn.setOnClickListener{
+            val intent = Intent(this@DbmsActivity, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.submitAttempt.setOnClickListener{
+            val intent = Intent(this@DbmsActivity, ResultActivity::class.java)
+            startActivity(intent)
         }
     }
 

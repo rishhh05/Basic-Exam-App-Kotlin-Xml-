@@ -233,11 +233,14 @@ class MainActivity : AppCompatActivity() {
             })
             dialogBuilder1.show()
         }
+
+// Moving to DBMS section
         binding.nextSecBtn.setOnClickListener{
             var intent = Intent(this@MainActivity , DbmsActivity::class.java)
             startActivity(intent)
             finish()
         }
+//      Directly submit the attempt
         binding.submitAttempt.setOnClickListener{
             var intent = Intent(this@MainActivity,ResultActivity::class.java)
             intent.putExtra("marksScored", marksCounter)
